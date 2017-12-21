@@ -9,19 +9,26 @@
     },
 
     "require" : {
-        "bernard/bernard" : ">=0.11,<0.13",
+        "bernard/bernard" : "dev-doctrineDriverFix",
         "symfony/framework-bundle" : "~2.1"
     },
 
     "require-dev" : {
         "symfony/console" : "~2.1",
         "symfony/finder" : "~2.1",
-	"phpunit/phpunit": "~4.0"
+	    "phpunit/phpunit": "~4.0"
     },
 
     "extra" : {
         "branch-alias" : {
             "dev-master" : "1.0.x-dev"
         }
-    }
+    },
+    
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/adamchrabaszcz/bernard.git"
+        }
+    ]
 }
